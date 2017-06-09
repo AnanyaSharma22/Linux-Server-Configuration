@@ -25,10 +25,10 @@ Prepare the server to host your web applications.
    - Open terminal in that folder and follow the steps below.
    - Change the file rights to read only. Your key must not be publicly viewable for SSH to work.
    
-          chmod 400 ./private_keyname
+          chmod 400 ./catalog.pem
    - ssh into instance.
    
-          ssh -i private_keyname root@PUBLIC_IP_ADDRESS
+          ssh -i catalog.pem root@PUBLIC_IP_ADDRESS
           
 3. Create a new user account named "grader".
    - Add new user
@@ -85,9 +85,10 @@ Prepare the server to host your web applications.
    
           ssh-copy-id grader@XX.XX.XX.XX -i (key_name.pub)
           
-   - Now you are able to log into the remote VM (log into grader) through ssh with the following command.
+   - Now you are able to log into the remote VM (log into grader) through ssh with the following command as my key name is
+     grader.
    
-          ssh -i private_keyname grader@XX.XX.XX.XX
+          ssh -i grader -p 2200 grader@XX.XX.XX.XX
           
 5. Changes in sshd_config file. 
    - Move to the following file.
