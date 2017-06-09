@@ -25,10 +25,10 @@ Prepare the server to host your web applications.
    - Open terminal in that folder and follow the steps below.
    - Change the file rights to read only. Your key must not be publicly viewable for SSH to work.
    
-          chmod 400 ./catalog.pem
+          chmod 400 /(address_to_private_key)/catalog.pem
    - ssh into instance.
    
-          ssh -i catalog.pem root@PUBLIC_IP_ADDRESS
+          ssh -i (address_to_private_key)/catalog.pem root@PUBLIC_IP_ADDRESS
           
 3. Create a new user account named "grader".
    - Add new user
