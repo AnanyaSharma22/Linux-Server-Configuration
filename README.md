@@ -86,7 +86,7 @@ Prepare the server to host your web applications.
           ssh-copy-id grader@XX.XX.XX.XX -i (key_name.pub)
           
    - Now you are able to log into the remote VM (log into grader) through ssh with the following command as my key name is
-     grader.
+     grader so, I can log in to my VM(server) by running the command below.
    
           ssh -i grader -p 2200 grader@XX.XX.XX.XX
           
