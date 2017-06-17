@@ -53,7 +53,7 @@ Prepare the server to host your web applications.
    - To sort out the virtual login issue. 
        * Move to sshd_config file 
        
-             sudo nano /etc/ssh/sshd-config
+             sudo nano /etc/ssh/sshd_config
        * In the above file make the following changes
        
              - set password authentication to "yes"
@@ -221,7 +221,7 @@ Prepare the server to host your web applications.
 
     - Change the branch of repo Item-Catalog-Website to production:
 
-          cd catalog && git checkout production
+          cd catalog && git checkout deployment
 
     - Make a catalog.wsgi file to serve the application over the mod_wsgi.:
 
